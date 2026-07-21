@@ -1,29 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudentHub — Login</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<h1>Login Page</h1>
+  <header class="main-header">
+    <div class="site-title">
+      <span class="icon">🎓</span> StudentHub
+    </div>
 
-<form>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="attendance.html">Attendance</a>
+        <a href="assignment.html">Assignments</a>
+        <a href="timetable.html">Timetable</a>
+        <a href="notice.html">Notices</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
 
-<label>Username</label><br>
-<input type="text"><br><br>
+    <div class="live-clock" id="liveClock">Loading...</div>
+  </header>
 
-<label>Password</label><br>
-<input type="password"><br><br>
+  <main class="main-content">
+    <h1 class="page-title">
+      <span class="emoji">🔐</span> Student Login
+    </h1>
 
-<button>Login</button>
+    <form class="login-form" novalidate>
+      <div class="form-group">
+        <label for="loginUser">Username</label>
+        <input type="text" id="loginUser" placeholder="Enter your username">
+        <span class="form-error">Username is required</span>
+      </div>
 
-</form>
+      <div class="form-group">
+        <label for="loginPass">Password</label>
+        <input type="password" id="loginPass" placeholder="Enter your password">
+        <span class="form-error">Password is required</span>
+      </div>
 
-<br>
+      <button type="submit" class="btn">Sign In</button>
+    </form>
 
-<a href="index.html">Back to Home</a>
+    <p style="margin-top: 20px; font-weight: 600;">
+      Don't have an account? <a href="register.html" style="color: var(--red); font-weight: 800;">Register here</a>
+    </p>
 
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+  </main>
+
+  <footer class="main-footer">
+    &copy; <span>2026</span> StudentHub Portal — Built for Students
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

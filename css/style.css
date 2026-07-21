@@ -10,9 +10,9 @@ background:#f4f4f4;
 
 header{
 
-background:#0056b3;
+background:#d8ebff;
 
-color:white;
+color:rgb(1, 0, 75);
 
 padding:20px;
 
@@ -20,7 +20,7 @@ padding:20px;
 
 nav a{
 
-color:white;
+color:rgb(0, 0, 0);
 
 margin-right:15px;
 
@@ -30,7 +30,7 @@ text-decoration:none;
 
 h1{
 
-color:#ffedb2;
+color:#070068;
 
 }
 
