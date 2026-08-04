@@ -25,6 +25,5 @@ This project is developed as a Web Development Lab project.
 
 ## Author
 
-Student Name
-
-Enrollment Number
+Vishnu Jariwala
+D26IT113
