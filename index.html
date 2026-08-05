@@ -8,34 +8,68 @@
 <body>
 
 <header>
-    <h1>StudentHub Portal</h1>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="register.html">Register</a>
-        <a href="dashboard.html">Dashboard</a>
-        <a href="attendance.html">Attendance</a>
-        <a href="assignment.html">Assignment</a>
-        <a href="timetable.html">Timetable</a>
-        <a href="notice.html">Notice</a>
-        <a href="profile.html">Profile</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
+    <div class="header-inner">
+        <div class="header-brand">
+            <h1>StudentHub Portal</h1>
+            <p>Your student academic workspace.</p>
+        </div>
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notice.html">Notice</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
 </header>
 
-<hr>
+<main class="container">
+    <section class="hero">
+        <h2>Welcome to StudentHub</h2>
+        <p>StudentHub helps you manage attendance, assignments, timetable and notices in one place. Stay organized, access course updates, and track your academic progress with an easy-to-use portal.</p>
+            <img src="assets/hero_image.jpg" alt="Charusat image" style="display:block;margin:20px auto;max-width:900px;width:90%;height:auto;border-radius:8px;">
+        <div class="hero-actions">
+            <a class="btn" href="dashboard.html">Go to Dashboard</a>
+            <a class="btn btn-secondary" href="register.html">Register Now</a>
+        </div>
+    </section>
 
-<h2>Welcome to StudentHub</h2>
+    <section class="grid grid-3">
+        <div class="card">
+            <h3>Track Attendance</h3>
+            <p>View attendance records and progress rates for your current subjects.</p>
+            <span class="badge">92% overall</span>
+        </div>
+        <div class="card">
+            <h3>Manage Assignments</h3>
+            <p>Keep all practical and theory tasks organized with due dates and status highlights.</p>
+            <span class="badge">3 assignments due</span>
+        </div>
+        <div class="card">
+            <h3>Stay Updated</h3>
+            <p>Check the latest notices, exam dates, and campus announcements from your department.</p>
+            <span class="badge">New notice posted</span>
+        </div>
+    </section>
 
-<p>
-StudentHub is a web portal where students can manage their academic activities.
-</p>
+    <section class="section-card">
+        <h3>Quick Links</h3>
+        <ul class="link-list">
+            <li><a href="dashboard.html">Dashboard overview</a></li>
+            <li><a href="attendance.html">Attendance details</a></li>
+            <li><a href="assignment.html">Assignment list</a></li>
+            <li><a href="contact.html">Contact support team</a></li>
+        </ul>
+    </section>
+</main>
 
 <footer>
-    <hr>
-    © 2026 StudentHub Portal
+    © 2026 StudentHub Portal. Built as a clear and responsive college web project.
 </footer>
 
 <script src="js/script.js"></script>

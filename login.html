@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Login | StudentHub</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>Login Page</h1>
+<header>
+    <div class="header-inner">
+        <div class="header-brand">
+            <h1>StudentHub Portal</h1>
+            <p>Secure student access.</p>
+        </div>
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notice.html">Notice</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 
-<form>
+<main class="container">
+    <section class="card">
+        <h2 class="page-title">Student Login</h2>
+        <form id="loginForm" class="needs-validation" novalidate>
+            <div class="form-row">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Enter your username" required>
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-row">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <input type="submit" value="Login">
+            <p class="form-message" aria-live="polite"></p>
+        </form>
+        <p>Need an account? <a href="register.html">Register here</a>.</p>
+    </section>
+</main>
 
-<label>Username</label><br>
-<input type="text"><br><br>
+<footer>
+    © 2026 StudentHub Portal. Manage your account securely.
+</footer>
 
-<label>Password</label><br>
-<input type="password"><br><br>
-
-<button>Login</button>
-
-</form>
-
-<br>
-
-<a href="index.html">Back to Home</a>
+<script src="js/script.js"></script>
 
 </body>
 </html>

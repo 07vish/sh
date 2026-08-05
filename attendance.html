@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Attendance</title>
+    <title>Attendance | StudentHub</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<h1>Attendance</h1>
-
-<table border="1">
-
-<tr>
-<th>Subject</th>
-<th>Attendance</th>
-</tr>
-
-<tr>
-<td>Web Development</td>
-<td>92%</td>
-</tr>
-
-<tr>
-<td>Python</td>
-<td>95%</td>
-</tr>
-
-</table>
-
-<br>
-
-<a href="dashboard.html">Dashboard</a>
-
+<header>
+    <div class="header-inner">
+        <div class="header-brand">
+            <h1>StudentHub Portal</h1>
+        </div>
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notice.html">Notice</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <section class="card">
+        <h2 class="page-title">Attendance</h2>
+        <p>Review your current attendance status for this semester.</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Attendance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>92%</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>95%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Maintain attendance above 75% to remain eligible for exams.</p>
+    </section>
+</main>
+<footer>
+    © 2026 StudentHub Portal
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>

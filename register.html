@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Register</title>
+    <title>Register | StudentHub</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h1>Student Registration</h1>
+<header>
+    <div class="header-inner">
+        <div class="header-brand">
+            <h1>StudentHub Portal</h1>
+            <p>Create your student account.</p>
+        </div>
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="notice.html">Notice</a>
+            <a href="profile.html">Profile</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
 
-<form>
+<main class="container">
+    <section class="card">
+        <h2 class="page-title">Student Registration</h2>
+        <form id="registerForm" class="needs-validation" novalidate>
+            <div class="form-row">
+                <label for="full-name">Full Name</label>
+                <input id="full-name" name="full_name" type="text" placeholder="Full Name" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email" required>
+            </div>
+            <div class="form-row">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password" required>
+            </div>
+            <div class="form-row">
+                <label for="confirm_password">Confirm Password</label>
+                <input id="confirm_password" name="confirm_password" type="password" placeholder="Confirm Password" required>
+            </div>
+            <input type="submit" value="Register">
+            <p class="form-message" aria-live="polite"></p>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+    </section>
+</main>
 
-<input type="text" placeholder="Full Name"><br><br>
+<footer>
+    © 2026 StudentHub Portal. Join StudentHub today.
+</footer>
 
-<input type="email" placeholder="Email"><br><br>
-
-<input type="password" placeholder="Password"><br><br>
-
-<button>Register</button>
-
-</form>
-
-<a href="index.html">Home</a>
+<script src="js/script.js"></script>
 
 </body>
 </html>
