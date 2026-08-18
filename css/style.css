@@ -9,6 +9,50 @@ body {
     color: #1f2937;
 }
 
+/* Dark mode styles */
+body.dark-mode {
+    background: #071223;
+    color: #e5e7eb;
+}
+
+body.dark-mode .hero,
+body.dark-mode .card,
+body.dark-mode .section-card,
+body.dark-mode form {
+    background: #0b1220;
+    box-shadow: none;
+    color: #e5e7eb;
+}
+
+body.dark-mode .navbar {
+    background: #071826 !important;
+}
+
+body.dark-mode nav a {
+    color: #e5e7eb;
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a.active {
+    background: rgba(255,255,255,0.06);
+}
+
+body.dark-mode .btn {
+    background: #1f2937;
+    color: #e5e7eb;
+}
+
+body.dark-mode .btn.btn-outline-light {
+    background: transparent;
+    color: #e5e7eb;
+    border-color: rgba(255,255,255,0.12);
+}
+
+body.dark-mode footer {
+    background: transparent;
+    color: #94a3b8;
+}
+
 header {
     background: #0056b3;
     color: #ffffff;
@@ -47,7 +91,7 @@ nav a.active {
     background: rgba(255, 255, 255, 0.18);
 }
 
-.container {
+.site-container {
     max-width: 960px;
     margin: 24px auto;
     padding: 0 20px 40px;
@@ -98,6 +142,26 @@ input[type="submit"] {
     color: #ffffff;
     cursor: pointer;
     text-decoration: none;
+}
+
+.navbar-buttons button {
+    padding: 6px 12px;
+    min-width: 110px;
+}
+
+@media (max-width: 991px) {
+    .navbar-buttons {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 0.75rem;
+    }
+
+    .navbar-buttons button {
+        width: auto;
+        flex: 1 1 auto;
+        min-width: 100px;
+    }
 }
 
 .btn-secondary {
