@@ -222,6 +222,23 @@ textarea {
     background: #f8fafc;
 }
 
+input.field-invalid {
+    border-color: #b91c1c;
+    background: #fff7f7;
+}
+
+input.field-valid {
+    border-color: #047857;
+}
+
+.field-error {
+    display: block;
+    min-height: 1.2em;
+    margin-top: 5px;
+    color: #b91c1c;
+    font-size: 0.875rem;
+}
+
 .form-message {
     margin-top: 10px;
     font-size: 0.95rem;

@@ -38,19 +38,23 @@
         <form id="registerForm" class="needs-validation" novalidate>
             <div class="form-row">
                 <label for="full-name">Full Name</label>
-                <input id="full-name" name="full_name" type="text" placeholder="Full Name" required>
+                <input id="full-name" name="full_name" type="text" placeholder="Full Name" autocomplete="name" required>
+                <small class="field-error" id="full-name-error" aria-live="polite"></small>
             </div>
             <div class="form-row">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="Email" required>
+                <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+                <small class="field-error" id="email-error" aria-live="polite"></small>
             </div>
             <div class="form-row">
                 <label for="password">Password</label>
-                <input id="password" name="password" type="password" placeholder="Password" required>
+                <input id="password" name="password" type="password" placeholder="Password" autocomplete="new-password" minlength="8" required>
+                <small class="field-error" id="password-error" aria-live="polite"></small>
             </div>
             <div class="form-row">
                 <label for="confirm_password">Confirm Password</label>
-                <input id="confirm_password" name="confirm_password" type="password" placeholder="Confirm Password" required>
+                <input id="confirm_password" name="confirm_password" type="password" placeholder="Confirm Password" autocomplete="new-password" required>
+                <small class="field-error" id="confirm_password-error" aria-live="polite"></small>
             </div>
             <input type="submit" value="Register">
             <p class="form-message" aria-live="polite"></p>

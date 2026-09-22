@@ -23,6 +23,41 @@ function dark_mode() {
     }
 }
 
+function validateRegistrationField(input, form) {
+    const error = document.getElementById(`${input.id}-error`);
+    let errorText = '';
+    const value = input.value.trim();
+
+    if (input.name === 'full_name' && !/^[A-Za-z ]{2,}$/.test(value)) {
+        errorText = 'Enter your full name using at least 2 letters.';
+    } else if (input.name === 'email' && !input.validity.valid) {
+        errorText = 'Enter a valid email address, for example name@example.com.';
+    } else if (input.name === 'password' && input.value.length < 8) {
+        errorText = 'Password must contain at least 8 characters.';
+    } else if (input.name === 'confirm_password' && input.value !== form.querySelector('[name="password"]').value) {
+        errorText = 'Passwords do not match.';
+    }
+
+    input.classList.toggle('field-invalid', Boolean(errorText));
+    input.classList.toggle('field-valid', !errorText && value.length > 0);
+    input.setAttribute('aria-invalid', String(Boolean(errorText)));
+    if (error) {
+        error.textContent = errorText;
+    }
+    return !errorText;
+}
+
+function validateRegistrationForm(form) {
+    const fields = form.querySelectorAll('input[name="full_name"], input[name="email"], input[name="password"], input[name="confirm_password"]');
+    let isValid = true;
+    fields.forEach(function (field) {
+        if (!validateRegistrationField(field, form)) {
+            isValid = false;
+        }
+    });
+    return isValid;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('nav a').forEach(function (link) {
@@ -72,26 +107,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const forms = document.querySelectorAll('form.needs-validation');
     forms.forEach(function (form) {
+        if (form.id === 'registerForm') {
+            form.querySelectorAll('input').forEach(function (input) {
+                input.addEventListener('blur', function () {
+                    validateRegistrationField(input, form);
+                });
+                input.addEventListener('input', function () {
+                    validateRegistrationField(input, form);
+                    if (input.name === 'password') {
+                        validateRegistrationField(form.querySelector('[name="confirm_password"]'), form);
+                    }
+                });
+            });
+        }
+
         form.addEventListener('submit', function (event) {
             event.preventDefault();
             const message = form.querySelector('.form-message');
             message.classList.remove('success', 'error');
 
-            if (!form.checkValidity()) {
+            if (form.id === 'registerForm' && !validateRegistrationForm(form)) {
+                message.textContent = 'Please correct the highlighted fields and try again.';
+                message.classList.add('error');
+                const firstInvalidField = form.querySelector('.field-invalid');
+                if (firstInvalidField) {
+                    firstInvalidField.focus();
+                }
+                return;
+            }
+
+            if (form.id !== 'registerForm' && !form.checkValidity()) {
                 message.textContent = 'Please complete all required fields before submitting.';
                 message.classList.add('error');
                 return;
             }
 
             if (form.id === 'registerForm') {
-                const password = form.querySelector('input[name="password"]').value;
-                const confirmPassword = form.querySelector('input[name="confirm_password"]').value;
-                if (password !== confirmPassword) {
-                    message.textContent = 'Passwords do not match. Please try again.';
-                    message.classList.add('error');
-                    return;
-                }
-
                 const student = {
                     name: form.querySelector('[name="full_name"]').value.trim(),
                     email: form.querySelector('[name="email"]').value.trim()
