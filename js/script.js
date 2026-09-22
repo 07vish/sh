@@ -1,21 +1,6 @@
-console.log('Script loaded successfully.');
-let StudentName = "Priyam";
-let subject = "WDF";
-let semster = 3;
-console.log(`Student Name: ${StudentName}, Subject: ${subject}, Semester: ${semster}`);
+const defaultHeading = 'Welcome to StudentHub';
 
-let college = "Charusat";
-let year = 2026;
-let isStudent = true;
-console.log(`College: ${college}, Year: ${year}, Is Student: ${isStudent}`);
-
-function greetStudent(name) {
-    console.log(`Hello, ${name}! Welcome to the ${subject} course.`);
-}
-
-greetStudent("Vivek");
-
-function dark_mode(){
+function dark_mode() {
     const toggleBtn = document.getElementById('themesBtn');
     const currentTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -46,6 +31,45 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    const heading = document.getElementById('heroHeading');
+    const savedHeading = localStorage.getItem('heroHeading');
+    if (heading && savedHeading) {
+        heading.textContent = savedHeading;
+    }
+
+    const changeButton = document.getElementById('changeBtn');
+    if (changeButton && heading) {
+        changeButton.addEventListener('click', function () {
+            const nextHeading = heading.textContent === defaultHeading
+                ? 'Learn, Track, Succeed'
+                : defaultHeading;
+            heading.textContent = nextHeading;
+            localStorage.setItem('heroHeading', nextHeading);
+        });
+    }
+
+    const resetButton = document.getElementById('resetBtn');
+    if (resetButton) {
+        resetButton.addEventListener('click', function () {
+            localStorage.removeItem('heroHeading');
+            localStorage.removeItem('student');
+            localStorage.removeItem('rememberedUsername');
+            localStorage.removeItem('loggedIn');
+            localStorage.setItem('theme', 'light');
+            if (heading) {
+                heading.textContent = defaultHeading;
+            }
+            document.body.classList.remove('dark-mode');
+            window.alert('Saved preferences have been reset.');
+        });
+    }
+
+    const rememberedUsername = localStorage.getItem('rememberedUsername');
+    const usernameInput = document.getElementById('username');
+    if (usernameInput && rememberedUsername) {
+        usernameInput.value = rememberedUsername;
+    }
+
     const forms = document.querySelectorAll('form.needs-validation');
     forms.forEach(function (form) {
         form.addEventListener('submit', function (event) {
@@ -67,9 +91,28 @@ document.addEventListener('DOMContentLoaded', function () {
                     message.classList.add('error');
                     return;
                 }
+
+                const student = {
+                    name: form.querySelector('[name="full_name"]').value.trim(),
+                    email: form.querySelector('[name="email"]').value.trim()
+                };
+                localStorage.setItem('student', JSON.stringify(student));
             }
 
-            message.textContent = 'Great! Your information has been recorded for this demo site.';
+            if (form.id === 'loginForm') {
+                const remember = form.querySelector('[name="remember"]').checked;
+                const username = form.querySelector('[name="username"]').value.trim();
+                if (remember) {
+                    localStorage.setItem('rememberedUsername', username);
+                } else {
+                    localStorage.removeItem('rememberedUsername');
+                }
+                localStorage.setItem('loggedIn', 'true');
+            }
+
+            message.textContent = form.id === 'loginForm'
+                ? 'Login successful for this demo site.'
+                : 'Registration successful. Your details were saved in this browser.';
             message.classList.add('success');
         });
     });
