@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "title": "TechPulse 2026 Hackathon",
+    "category": "Technical",
+    "date": "2026-10-25",
+    "venue": "IT Lab Complex & Auditorium",
+    "organizer": "Department of IT",
+    "description": "36-hour offline hackathon focused on Web3, AI in Healthcare, and Smart Mobility solutions."
+  },
+  {
+    "id": 2,
+    "title": "DevFest Cloud & Kubernetes Summit",
+    "category": "Workshop",
+    "date": "2026-10-28",
+    "venue": "Seminar Hall B",
+    "organizer": "Google Developer Student Club",
+    "description": "Deep-dive workshops on containerization, CI/CD pipelines, and serverless architectures."
+  },
+  {
+    "id": 3,
+    "title": "CyberShield Ethical Hacking Bootcamp",
+    "category": "Technical",
+    "date": "2026-11-02",
+    "venue": "Cyber Security Lab",
+    "organizer": "InfoSec Student Chapter",
+    "description": "Learn network vulnerability assessment, OWASP Top 10 vulnerabilities, and penetration testing."
+  },
+  {
+    "id": 4,
+    "title": "Spandan Annual Cultural Night",
+    "category": "Cultural",
+    "date": "2026-11-08",
+    "venue": "University Open Air Amphitheatre",
+    "organizer": "Student Cultural Council",
+    "description": "A night of classical dance, band performances, fashion shows, and musical theatre."
+  },
+  {
+    "id": 5,
+    "title": "Inter-Department Football Championship",
+    "category": "Sports",
+    "date": "2026-11-12",
+    "venue": "University Sports Ground",
+    "organizer": "Sports Directorate",
+    "description": "Annual 7-a-side inter-branch knockout tournament with trophies and awards."
+  },
+  {
+    "id": 6,
+    "title": "Full-Stack Web Development Masterclass",
+    "category": "Workshop",
+    "date": "2026-11-15",
+    "venue": "Online Webinar Room",
+    "organizer": "WDF Faculty & Mentors",
+    "description": "Building modern full-stack web applications with PHP, MySQL, REST APIs, and modern frontend frameworks."
+  },
+  {
+    "id": 7,
+    "title": "AI in Automation & Robotics Expo",
+    "category": "Technical",
+    "date": "2026-11-19",
+    "venue": "Central Atrium",
+    "organizer": "Robotics & AI Club",
+    "description": "Showcase of student-built autonomous rovers, robotic arms, and IoT drone demonstrations."
+  },
+  {
+    "id": 8,
+    "title": "Alumni Career Mentorship & Networking",
+    "category": "Placement",
+    "date": "2026-11-22",
+    "venue": "Management Auditorium",
+    "organizer": "Training & Placement Cell",
+    "description": "Connect with alumni working at Google, Microsoft, and TCS for resume reviews and interview tips."
+  },
+  {
+    "id": 9,
+    "title": "Startup Pitch Deck Competition",
+    "category": "Entrepreneurship",
+    "date": "2026-11-26",
+    "venue": "Innovation & Incubation Hub",
+    "organizer": "CHARUSAT Incubation Centre",
+    "description": "Pitch innovative business models to angel investors and seed fund incubators for grant funding."
+  },
+  {
+    "id": 10,
+    "title": "CodeSprint Competitive Programming Contest",
+    "category": "Technical",
+    "date": "2026-12-01",
+    "venue": "Programming Lab 1 & 2",
+    "organizer": "ACM Student Chapter",
+    "description": "Algorithmic problem-solving contest testing data structures, dynamic programming, and math."
+  },
+  {
+    "id": 11,
+    "title": "Campus Photography & Videography Contest",
+    "category": "Cultural",
+    "date": "2026-12-04",
+    "venue": "Campus Grounds",
+    "organizer": "Media & Photography Club",
+    "description": "Theme-based photography competition capturing campus architecture, flora, and student life."
+  },
+  {
+    "id": 12,
+    "title": "Green Campus Tree Plantation Drive",
+    "category": "Social",
+    "date": "2026-12-08",
+    "venue": "University Botanical Garden",
+    "organizer": "NSS Volunteers Unit",
+    "description": "Eco-friendly plantation drive planting 500 indigenous tree saplings across the university campus."
+  },
+  {
+    "id": 13,
+    "title": "Data Science & Predictive Modeling Summit",
+    "category": "Workshop",
+    "date": "2026-12-12",
+    "venue": "Computer Lab 4",
+    "organizer": "Data Science Society",
+    "description": "Hands-on data cleaning, feature engineering, and model deployment using Python, pandas, and scikit-learn."
+  },
+  {
+    "id": 14,
+    "title": "Badminton Singles & Doubles Tournament",
+    "category": "Sports",
+    "date": "2026-12-16",
+    "venue": "Indoor Sports Complex",
+    "organizer": "Sports Board",
+    "description": "Open badminton tournament for boys and girls across all constituent institutes of CHARUSAT."
+  },
+  {
+    "id": 15,
+    "title": "Game Development with Unity 3D Workshop",
+    "category": "Workshop",
+    "date": "2026-12-20",
+    "venue": "Multipurpose Hall",
+    "organizer": "Gaming Club",
+    "description": "Learn 3D physics, C# scripting, and asset pipeline integration for Indie games."
+  },
+  {
+    "id": 16,
+    "title": "Annual Alumni Reunion Gala 2026",
+    "category": "Cultural",
+    "date": "2026-12-24",
+    "venue": "University Convention Centre",
+    "organizer": "Alumni Association",
+    "description": "Celebrate homecoming with faculty, felicitate distinguished alumni, and enjoy live dinner music."
+  }
+]

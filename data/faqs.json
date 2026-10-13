@@ -1,0 +1,18 @@
+[
+  {"id": 1, "category": "General", "question": "What is the StudentHub Portal?", "answer": "StudentHub is a unified academic and campus activity platform designed for students to manage coursework, notices, events, and registrations."},
+  {"id": 2, "category": "Account", "question": "How do I register for an account?", "answer": "Click on the Register link in the navigation menu, enter your full name, student ID, email address, password, and submit the form."},
+  {"id": 3, "category": "Account", "question": "What should I do if I forget my password?", "answer": "You can reach out to the campus IT administrator via the Contact page or reset it using your registered college email."},
+  {"id": 4, "category": "Academic", "question": "Where can I view my class timetable?", "answer": "Navigate to the Timetable tab in the main navigation menu to view your weekly lecture and lab schedule."},
+  {"id": 5, "category": "Academic", "question": "How do I check my subject-wise attendance?", "answer": "Visit the Attendance section from your dashboard to view your attendance percentage and attendance criteria alerts."},
+  {"id": 6, "category": "Events", "question": "How do I register for college hackathons and workshops?", "answer": "Go to the Events tab, select the event you want to attend, and click on Register. You will receive an instant confirmation."},
+  {"id": 7, "category": "Technical", "question": "Does StudentHub support dark mode?", "answer": "Yes! Use the Change Themes toggle on the homepage to switch between light and dark themes. Your choice is remembered automatically."},
+  {"id": 8, "category": "Academic", "question": "How are assignments submitted?", "answer": "Assignments can be viewed under the Assignment page with due dates, topic outlines, and submission links."},
+  {"id": 9, "category": "Technical", "question": "Can I access StudentHub on mobile devices?", "answer": "Yes, StudentHub is fully responsive and optimized for mobile screens, tablets, and desktop displays."},
+  {"id": 10, "category": "Account", "question": "How do I update my profile details?", "answer": "Log into your account, click on Profile in the navigation, and update your phone number, profile photo, or bio."},
+  {"id": 11, "category": "Events", "question": "Can students propose or organize events?", "answer": "Yes, student club coordinators can submit event proposals through the contact form or to the student council."},
+  {"id": 12, "category": "Technical", "question": "What browsers are supported?", "answer": "StudentHub runs smoothly on modern browsers including Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari."},
+  {"id": 13, "category": "General", "question": "How often is the Notice Board updated?", "answer": "The Notice Board is updated in real time whenever the department or university administration publishes a circular."},
+  {"id": 14, "category": "Academic", "question": "What is the minimum attendance requirement?", "answer": "CHARUSAT requires a minimum of 80% overall attendance across theoretical and practical sessions to appear for end-semester exams."},
+  {"id": 15, "category": "Campus", "question": "Where can I find library borrowing policies?", "answer": "Library circulation rules and e-resource catalog details are available under the quick links on the dashboard."},
+  {"id": 16, "category": "General", "question": "Who can I contact for portal technical assistance?", "answer": "Use the Contact Us page or email the support desk at studenthub-support@charusat.edu.in."}
+]

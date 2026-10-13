@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "title": "Mid-Semester Examination Schedule Announced",
+    "category": "Academic",
+    "date": "2026-09-15",
+    "content": "The timetable for Semester 3 mid-semester theory examinations has been published on the student notice board and portal.",
+    "priority": "High"
+  },
+  {
+    "id": 2,
+    "title": "TechFest 2026 Hackathon Registration Open",
+    "category": "Events",
+    "date": "2026-09-18",
+    "content": "Registrations are now open for the 36-hour annual national level hackathon 'TechPulse 2026' organized by CSPIT IT.",
+    "priority": "High"
+  },
+  {
+    "id": 3,
+    "title": "Library Extended Hours for Exam Preparation",
+    "category": "Campus",
+    "date": "2026-09-20",
+    "content": "The central library reading rooms will remain open until 11:00 PM on all working days starting next week.",
+    "priority": "Normal"
+  },
+  {
+    "id": 4,
+    "title": "Industrial Visit to GIFT City Tech Park",
+    "category": "Academic",
+    "date": "2026-09-22",
+    "content": "Third semester IT students are eligible to enroll for the one-day industrial exposure visit to GIFT City FinTech hub.",
+    "priority": "Normal"
+  },
+  {
+    "id": 5,
+    "title": "Workshop on Cloud Computing & DevOps",
+    "category": "Workshop",
+    "date": "2026-09-25",
+    "content": "Hands-on workshop covering Docker, Kubernetes, and AWS deployment will be conducted this Saturday by industry alumni.",
+    "priority": "High"
+  },
+  {
+    "id": 6,
+    "title": "Hostel Fee Payment Deadline Reminder",
+    "category": "Administrative",
+    "date": "2026-09-27",
+    "content": "Hostel residents must clear their term maintenance dues on or before October 5 to avoid late fee penalties.",
+    "priority": "Urgent"
+  },
+  {
+    "id": 7,
+    "title": "National Cyber Security Awareness Month",
+    "category": "Events",
+    "date": "2026-10-01",
+    "content": "Join expert guest webinars and cyber security quizzes organized every Wednesday throughout October.",
+    "priority": "Normal"
+  },
+  {
+    "id": 8,
+    "title": "Inter-College Cricket Tournament Trials",
+    "category": "Sports",
+    "date": "2026-10-03",
+    "content": "Trials for the FTE cricket squad will take place at the university sports complex cricket ground from 4:30 PM.",
+    "priority": "Low"
+  },
+  {
+    "id": 9,
+    "title": "Scholarship Application Portal Open for 2026-27",
+    "category": "Administrative",
+    "date": "2026-10-05",
+    "content": "Merit-cum-means scholarship applications are open for undergraduate students with family income criteria.",
+    "priority": "High"
+  },
+  {
+    "id": 10,
+    "title": "AI & Deep Learning Research Seminar",
+    "category": "Academic",
+    "date": "2026-10-07",
+    "content": "Keynote address by Dr. K. Mehta on foundation models and medical image diagnosis in the auditorium.",
+    "priority": "Normal"
+  },
+  {
+    "id": 11,
+    "title": "Blood Donation Camp by NSS Volunteer Cell",
+    "category": "Campus",
+    "date": "2026-10-09",
+    "content": "CHARUSAT NSS unit is hosting a voluntary blood donation drive in collaboration with the Red Cross Society.",
+    "priority": "Normal"
+  },
+  {
+    "id": 12,
+    "title": "Campus Placement Drive for 2026 Batch",
+    "category": "Placement",
+    "date": "2026-10-10",
+    "content": "Leading technology recruiters have commenced initial aptitude screening rounds for final year engineering students.",
+    "priority": "High"
+  },
+  {
+    "id": 13,
+    "title": "WDF Practical Assignment 2 Submission Due",
+    "category": "Academic",
+    "date": "2026-10-11",
+    "content": "Submit responsive CSS grid layouts and accessible HTML files on GitHub classroom before 11:59 PM.",
+    "priority": "Urgent"
+  },
+  {
+    "id": 14,
+    "title": "Robotics Club Bootcamp - Arduino to ROS",
+    "category": "Workshop",
+    "date": "2026-10-12",
+    "content": "Intensive weekend robotics bootcamp covering embedded sensors, microcontrollers, and ROS navigation.",
+    "priority": "Normal"
+  },
+  {
+    "id": 15,
+    "title": "Annual Cultural Fest Auditions Announced",
+    "category": "Events",
+    "date": "2026-10-14",
+    "content": "Auditions for music, dance, theatre, and fine arts events for Spandan 2026 will be held starting Monday.",
+    "priority": "Low"
+  },
+  {
+    "id": 16,
+    "title": "End-Term Project Synopsis Evaluation",
+    "category": "Academic",
+    "date": "2026-10-16",
+    "content": "All project groups must upload their approved synopsis signed by their respective project guide.",
+    "priority": "High"
+  }
+]

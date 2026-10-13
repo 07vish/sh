@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Notice Board | StudentHub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -16,34 +17,69 @@
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link active" href="notice.html">Notice</a></li>
                 <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="attendance.html">Attendance</a></li>
                 <li class="nav-item"><a class="nav-link" href="assignment.html">Assignment</a></li>
                 <li class="nav-item"><a class="nav-link" href="timetable.html">Timetable</a></li>
-                <li class="nav-item"><a class="nav-link" href="notice.html">Notice</a></li>
                 <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<main class="site-container">
-    <section class="card">
-        <h2 class="page-title">Latest Notices</h2>
-        <p>Stay informed about recent announcements.</p>
-        <ul>
-            <li>Assignment submission on Friday.</li>
-            <li>Lab Exam next week.</li>
-            <li>Industrial Visit on Saturday.</li>
-        </ul>
-        <p>Check this page often for new updates.</p>
+
+<main class="site-container my-4">
+    <section class="card shadow-sm p-4">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+            <div>
+                <h2 class="page-title mb-1">Campus Notice Board</h2>
+                <p class="text-muted mb-0">Stay informed with official academic, exam, and department circulars loaded using Fetch API.</p>
+            </div>
+            <span class="badge bg-secondary p-2 fs-6" id="noticeCountBadge">Loading circulars...</span>
+        </div>
+
+        <div class="row g-3 align-items-end mb-4">
+            <div class="col-md-5">
+                <label for="noticeSearch" class="form-label fw-semibold">Search Notices</label>
+                <input id="noticeSearch" type="search" class="form-control" placeholder="Search by title, keywords or content">
+            </div>
+            <div class="col-md-3">
+                <label for="noticeFilter" class="form-label fw-semibold">Category Filter</label>
+                <select id="noticeFilter" class="form-select">
+                    <option value="all">All Categories</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label for="noticeSort" class="form-label fw-semibold">Sort By</label>
+                <select id="noticeSort" class="form-select">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="title">Title A-Z</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button id="noticeResetBtn" class="btn btn-outline-secondary w-100">Reset</button>
+            </div>
+        </div>
+
+        <p id="noticeStatus" class="notice-status mb-3 alert alert-info py-2" aria-live="polite">Fetching notices from data/notices.json...</p>
+        <div id="noticeList" class="notice-grid" aria-live="polite"></div>
+
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mt-4 pt-3 border-top">
+            <small class="text-muted" id="noticePaginationInfo">Showing notices</small>
+            <ul class="pagination pagination-sm mb-0" id="noticePagination"></ul>
+        </div>
     </section>
 </main>
-<footer class="bg-light text-center text-muted py-3">
-    © 2026 StudentHub Portal
+
+<footer class="bg-light text-center text-muted py-3 mt-5">
+    © 2026 StudentHub Portal | CHARUSAT FTE ITUE203 Lab
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>

@@ -1,0 +1,18 @@
+[
+  {"id": 1, "student_id": "D26IT101", "name": "Aarav Patel", "email": "aarav.p@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 8.85},
+  {"id": 2, "student_id": "D26IT102", "name": "Bhavya Shah", "email": "bhavya.s@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 9.12},
+  {"id": 3, "student_id": "D26IT103", "name": "Chirag Joshi", "email": "chirag.j@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 8.45},
+  {"id": 4, "student_id": "D26IT104", "name": "Diya Mehta", "email": "diya.m@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 9.40},
+  {"id": 5, "student_id": "D26IT105", "name": "Eshan Trivedi", "email": "eshan.t@charusat.edu.in", "department": "CE", "semester": 3, "cgpa": 8.20},
+  {"id": 6, "student_id": "D26IT106", "name": "Falguni Dave", "email": "falguni.d@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 8.75},
+  {"id": 7, "student_id": "D26IT107", "name": "Gaurav Parmar", "email": "gaurav.p@charusat.edu.in", "department": "CE", "semester": 3, "cgpa": 7.95},
+  {"id": 8, "student_id": "D26IT108", "name": "Heena Vora", "email": "heena.v@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 9.05},
+  {"id": 9, "student_id": "D26IT109", "name": "Ishan Sharma", "email": "ishan.s@charusat.edu.in", "department": "EC", "semester": 3, "cgpa": 8.35},
+  {"id": 10, "student_id": "D26IT110", "name": "Jhanvi Desai", "email": "jhanvi.d@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 8.90},
+  {"id": 11, "student_id": "D26IT111", "name": "Karan Prajapati", "email": "karan.p@charusat.edu.in", "department": "CE", "semester": 3, "cgpa": 8.10},
+  {"id": 12, "student_id": "D26IT112", "name": "Lata Rathod", "email": "lata.r@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 8.65},
+  {"id": 13, "student_id": "D26IT113", "name": "Vishnu Jariwala", "email": "vishnu.j@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 9.25},
+  {"id": 14, "student_id": "D26IT114", "name": "Mihir Solanki", "email": "mihir.s@charusat.edu.in", "department": "IT", "semester": 3, "cgpa": 8.40},
+  {"id": 15, "student_id": "D26IT115", "name": "Nidhi Chaudhari", "email": "nidhi.c@charusat.edu.in", "department": "EC", "semester": 3, "cgpa": 8.70},
+  {"id": 16, "student_id": "D26IT116", "name": "Omkar Pandya", "email": "omkar.p@charusat.edu.in", "department": "CE", "semester": 3, "cgpa": 8.55}
+]
