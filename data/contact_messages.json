@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "timestamp": "2026-10-13 10:15:00",
+    "name": "Vishnu Jariwala",
+    "email": "vishnu.j@charusat.edu.in",
+    "phone": "9876543210",
+    "subject": "Inquiry on TechFest 2026 Hackathon",
+    "message": "Please provide registration guidelines and team size rules for the TechPulse 2026 Hackathon."
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-10-13 10:45:22",
+    "name": "Aarav Patel",
+    "email": "aarav.p@charusat.edu.in",
+    "phone": "9825012345",
+    "subject": "Lab Schedule Clarification",
+    "message": "Is the WDF practical lab scheduled in Lab 3 or Lab 4 on Tuesday afternoon?"
+  }
+]

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact | StudentHub</title>
+    <meta charset="UTF-8">
+    <title>Contact Us | StudentHub</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -16,30 +17,91 @@
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="notice.html">Notice</a></li>
                 <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
                 <li class="nav-item"><a class="nav-link" href="attendance.html">Attendance</a></li>
                 <li class="nav-item"><a class="nav-link" href="assignment.html">Assignment</a></li>
                 <li class="nav-item"><a class="nav-link" href="timetable.html">Timetable</a></li>
-                <li class="nav-item"><a class="nav-link" href="notice.html">Notice</a></li>
                 <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<main class="site-container">
-    <section class="card">
-        <h2 class="page-title">Contact Us</h2>
-        <p>If you have questions or need help, reach out using the details below.</p>
-        <p>Email: support@studenthub.com</p>
-        <p>Phone: +91-9999999999</p>
-    </section>
+
+<main class="site-container my-4">
+    <div class="row g-4">
+        <div class="col-lg-7">
+            <section class="card shadow-sm p-4">
+                <h2 class="page-title mb-2">Get in Touch</h2>
+                <p class="text-muted">Fill out the form below. Submitted data will be validated server-side in PHP and stored into CSV & JSON file formats.</p>
+
+                <form action="contact_process.php" method="POST" class="needs-validation mt-3" novalidate>
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="contactName" name="name" required placeholder="e.g. Vishnu Jariwala" minlength="2">
+                    </div>
+
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-6">
+                            <label for="contactEmail" class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="contactEmail" name="email" required placeholder="student@charusat.edu.in">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="contactPhone" class="form-label fw-semibold">Phone Number</label>
+                            <input type="tel" class="form-control" id="contactPhone" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contactSubject" class="form-label fw-semibold">Subject <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="contactSubject" name="subject" required placeholder="Inquiry about Event / Lab / Portal" minlength="3">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label fw-semibold">Your Message <span class="text-danger">*</span></label>
+                        <textarea class="form-control" id="contactMessage" name="message" rows="4" required placeholder="Provide full details regarding your query or feedback..." minlength="10"></textarea>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <button type="submit" class="btn btn-primary px-4">Submit Query (POST)</button>
+                        <a href="view_submissions.php" class="btn btn-outline-secondary btn-sm">View Saved Submissions</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div class="col-lg-5">
+            <section class="card shadow-sm p-4 h-100">
+                <h3 class="h4 mb-3">Campus Contact Info</h3>
+                <div class="mb-3">
+                    <h6 class="fw-bold text-primary mb-1">Campus Location</h6>
+                    <p class="text-muted small mb-0">Faculty of Technology & Engineering (FTE), CHARUSAT Campus, Changa - 388421, Gujarat, India.</p>
+                </div>
+                <div class="mb-3">
+                    <h6 class="fw-bold text-primary mb-1">Support Email</h6>
+                    <p class="text-muted small mb-0">studenthub-support@charusat.edu.in</p>
+                </div>
+                <div class="mb-3">
+                    <h6 class="fw-bold text-primary mb-1">Helpline Phone</h6>
+                    <p class="text-muted small mb-0">+91 2697 265011 / 265021</p>
+                </div>
+                <div class="p-3 bg-light rounded mt-auto border">
+                    <h6 class="fw-bold mb-1">Technical Implementation Note</h6>
+                    <p class="small text-muted mb-0">Practical 7 demonstrates HTTP POST request handling, server-side data sanitization, regular expression checks, and atomic file append using <code>flock</code> for CSV & JSON files.</p>
+                </div>
+            </section>
+        </div>
+    </div>
 </main>
-<footer class="bg-light text-center text-muted py-3">
-    © 2026 StudentHub Portal
+
+<footer class="bg-light text-center text-muted py-3 mt-5">
+    © 2026 StudentHub Portal | ITUE203 Lab Practical 7
 </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
