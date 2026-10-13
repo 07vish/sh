@@ -35,10 +35,10 @@
 <main class="site-container">
     <section class="card">
         <h2 class="page-title">Student Login</h2>
-        <form id="loginForm" class="needs-validation" novalidate>
+        <form id="loginForm" action="login.php" method="POST" class="needs-validation">
             <div class="form-row">
-                <label for="username">Username</label>
-                <input id="username" name="username" type="text" placeholder="Enter your username" required>
+                <label for="username">Username or Email</label>
+                <input id="username" name="username" type="text" placeholder="Enter username or email" required>
             </div>
             <div class="form-row">
                 <label for="password">Password</label>
@@ -50,7 +50,7 @@
             <input type="submit" value="Login">
             <p class="form-message" aria-live="polite"></p>
         </form>
-        <p>Need an account? <a href="register.html">Register here</a>.</p>
+        <p>Need an account? <a href="register.php">Register here</a>.</p>
     </section>
 </main>
 
